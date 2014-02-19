@@ -45,3 +45,6 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'capistrano'
+gem 'sidekiq'
+gem 'rvm-capistrano'
+gem 'capistrano-bundler'

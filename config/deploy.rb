@@ -34,7 +34,13 @@ set :repo_url, 'git@github.com:VoroninNick/test-cap.git'
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
+
+
 namespace :deploy do
+
+  task :bundle_gems do
+    run "cd #{deploy_to}/current && bundle install"
+  end
 
   desc 'Restart application'
   task :restart do
